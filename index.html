@@ -29,7 +29,6 @@ body{background:var(--bg);font-family:system-ui,-apple-system,'Segoe UI',sans-se
 .btn-primary:hover{background:#15403A}
 .btn-sm{padding:5px 12px;font-size:0.72rem}
 select.scenario-select{padding:7px 12px;border-radius:8px;font-size:0.78rem;border:1px solid var(--card-border);background:var(--card);color:var(--text-primary);cursor:pointer;font-weight:500}
-
 .metrics-bar{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-bottom:16px}
 .metric-card{background:var(--card);border:1px solid var(--card-border);border-radius:10px;padding:14px 16px;box-shadow:var(--card-shadow)}
 .metric-label{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);font-weight:600;margin-bottom:4px}
@@ -38,7 +37,6 @@ select.scenario-select{padding:7px 12px;border-radius:8px;font-size:0.78rem;bord
 .metric-sub{font-size:0.68rem;color:var(--text-muted);margin-top:3px}
 .metric-card.alert .metric-value{color:var(--danger)}
 .metric-card.good .metric-value{color:var(--success)}
-
 .config-panel{background:var(--card);border:1px solid var(--card-border);border-radius:10px;padding:0;margin-bottom:16px;overflow:hidden;box-shadow:var(--card-shadow)}
 .config-toggle{padding:12px 18px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;user-select:none}
 .config-toggle h3{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-secondary);font-weight:600}
@@ -50,7 +48,6 @@ select.scenario-select{padding:7px 12px;border-radius:8px;font-size:0.78rem;bord
 .config-item label{display:block;font-size:0.68rem;font-weight:600;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px}
 .config-item input[type=range]{width:100%;accent-color:var(--accent);height:4px;cursor:pointer}
 .config-item .range-val{font-family:'SF Mono',monospace;font-size:0.82rem;font-weight:700;color:var(--text-primary);margin-top:4px}
-
 .weather-strip{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-bottom:16px}
 .weather-day{background:var(--card);border:1px solid var(--card-border);border-radius:8px;padding:10px 12px;text-align:center;box-shadow:var(--card-shadow);transition:all 0.2s}
 .weather-day.active{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-light)}
@@ -60,12 +57,10 @@ select.scenario-select{padding:7px 12px;border-radius:8px;font-size:0.78rem;bord
 .weather-day .solar-eff.high{color:var(--solar)}
 .weather-day .solar-eff.mid{color:var(--warning)}
 .weather-day .solar-eff.low{color:var(--danger)}
-
 .card{background:var(--card);border:1px solid var(--card-border);border-radius:10px;padding:18px;box-shadow:var(--card-shadow)}
 .card h3{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-secondary);font-weight:600;margin-bottom:12px}
 .main-chart-section{margin-bottom:12px}
 .main-chart-wrap{position:relative;width:100%;height:clamp(260px,32vh,400px);min-width:0}
-
 .timeline-section{margin-bottom:16px}
 .timeline-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .timeline-scrubber{flex:1;min-width:200px;accent-color:var(--accent);height:5px;cursor:pointer}
@@ -73,7 +68,6 @@ select.scenario-select{padding:7px 12px;border-radius:8px;font-size:0.78rem;bord
 .speed-btns{display:flex;gap:4px}
 .speed-btn{padding:3px 10px;border-radius:6px;font-size:0.68rem;font-weight:600;border:1px solid var(--card-border);background:var(--card);cursor:pointer;color:var(--text-secondary)}
 .speed-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-
 .bottom-row{display:grid;grid-template-columns:280px minmax(0,1fr) minmax(0,1fr);gap:12px}
 .load-item{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid #F0ECE4}
 .load-item:last-child{border-bottom:none}
@@ -92,7 +86,6 @@ select.scenario-select{padding:7px 12px;border-radius:8px;font-size:0.78rem;bord
 .load-status{font-size:0.65rem;font-weight:700;min-width:48px;text-align:right;text-transform:uppercase;letter-spacing:0.04em}
 .load-status.on{color:var(--success)}
 .load-status.off{color:var(--danger)}
-
 .storage-chart-wrap{position:relative;width:100%;height:clamp(160px,20vh,220px);min-width:0}
 .econ-chart-wrap{position:relative;width:100%;height:clamp(100px,12vh,140px);min-width:0}
 .econ-metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
@@ -103,7 +96,6 @@ select.scenario-select{padding:7px 12px;border-radius:8px;font-size:0.78rem;bord
 .source-legend{display:flex;gap:14px;margin-bottom:10px;flex-wrap:wrap}
 .source-tag{display:flex;align-items:center;gap:5px;font-size:0.7rem;font-weight:600;color:var(--text-secondary)}
 .source-swatch{width:10px;height:10px;border-radius:3px}
-
 @media(max-width:1024px){
   .metrics-bar{grid-template-columns:repeat(3,minmax(0,1fr))}
   .bottom-row{grid-template-columns:1fr}
@@ -141,7 +133,6 @@ select.scenario-select{padding:7px 12px;border-radius:8px;font-size:0.78rem;bord
       <button class="btn btn-primary" id="configToggleBtn">Configure System</button>
     </div>
   </div>
-
   <div class="metrics-bar" id="metricsBar">
     <div class="metric-card" id="metricCapacity">
       <div class="metric-label">System Capacity</div>
@@ -169,7 +160,6 @@ select.scenario-select{padding:7px 12px;border-radius:8px;font-size:0.78rem;bord
       <div class="metric-sub" id="subH2">8,000 / 10,000 kWh</div>
     </div>
   </div>
-
   <div class="config-panel" id="configPanel">
     <div class="config-toggle" id="configToggle">
       <h3>System Configuration</h3>
@@ -205,9 +195,7 @@ select.scenario-select{padding:7px 12px;border-radius:8px;font-size:0.78rem;bord
       </div>
     </div>
   </div>
-
   <div class="weather-strip" id="weatherStrip"></div>
-
   <div class="card main-chart-section">
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:8px">
       <h3 style="margin-bottom:0">7-Day Generation vs Demand</h3>
@@ -223,7 +211,6 @@ select.scenario-select{padding:7px 12px;border-radius:8px;font-size:0.78rem;bord
       <canvas id="mainChart"></canvas>
     </div>
   </div>
-
   <div class="card timeline-section">
     <div class="timeline-controls">
       <button class="btn btn-sm" id="playBtn">&#9654; Play</button>
@@ -237,7 +224,6 @@ select.scenario-select{padding:7px 12px;border-radius:8px;font-size:0.78rem;bord
       </div>
     </div>
   </div>
-
   <div class="bottom-row">
     <div class="card">
       <h3>Load Priority &amp; Status</h3>
@@ -263,342 +249,42 @@ select.scenario-select{padding:7px 12px;border-radius:8px;font-size:0.78rem;bord
     </div>
   </div>
 </div>
-
 <script>
-const HOURS = 168;
-const weatherScenarios = {
-  standard: [1.0, 0.85, 0.35, 0.50, 0.95, 0.70, 0.85],
-  severe:   [0.8, 0.30, 0.12, 0.18, 0.30, 0.55, 0.75],
-  optimal:  [0.95,1.00, 0.92, 0.97, 1.00, 0.93, 0.98],
-};
-const weatherLabels = {
-  standard: ['Clear','Mostly Clear','Heavy Overcast','Overcast','Clear','Partly Cloudy','Mostly Clear'],
-  severe:   ['Partly Cloudy','Storm','Severe Storm','Storm','Storm','Clearing','Partly Cloudy'],
-  optimal:  ['Clear','Sunny','Clear','Sunny','Sunny','Clear','Sunny'],
-};
-const weatherIcons = w => w >= 0.9 ? '\u2600\uFE0F' : w >= 0.7 ? '\u26C5' : w >= 0.5 ? '\u2601\uFE0F' : w >= 0.3 ? '\uD83C\uDF27\uFE0F' : '\u26C8\uFE0F';
-
-const loads = [
-  {id:'icu',name:'ICU & Life Support',demand:500,priority:1},
-  {id:'comms',name:'Emergency Comms',demand:100,priority:1},
-  {id:'water',name:'Water Treatment',demand:400,priority:2},
-  {id:'general',name:'Hospital General',demand:300,priority:3},
-  {id:'emergency',name:'Emergency Response',demand:200,priority:4},
-  {id:'admin',name:'Hospital Admin',demand:200,priority:5},
-];
-
-let config = {solarCapacity:800,h2FuelCell:400,h2TankSize:10000,biomassCapacity:300,hydroCapacity:200,scenario:'standard'};
-let simData = [];
-let currentHour = 0;
-let playing = false;
-let playInterval = null;
-let playSpeed = 1;
-let mainChart, storageChart, econChart;
-
+const HOURS=168;
+const weatherScenarios={standard:[1.0,0.85,0.35,0.50,0.95,0.70,0.85],severe:[0.8,0.30,0.12,0.18,0.30,0.55,0.75],optimal:[0.95,1.00,0.92,0.97,1.00,0.93,0.98]};
+const weatherLabels={standard:['Clear','Mostly Clear','Heavy Overcast','Overcast','Clear','Partly Cloudy','Mostly Clear'],severe:['Partly Cloudy','Storm','Severe Storm','Storm','Storm','Clearing','Partly Cloudy'],optimal:['Clear','Sunny','Clear','Sunny','Sunny','Clear','Sunny']};
+const weatherIcons=w=>w>=0.9?'\u2600\uFE0F':w>=0.7?'\u26C5':w>=0.5?'\u2601\uFE0F':w>=0.3?'\uD83C\uDF27\uFE0F':'\u26C8\uFE0F';
+const loads=[{id:'icu',name:'ICU & Life Support',demand:500,priority:1},{id:'comms',name:'Emergency Comms',demand:100,priority:1},{id:'water',name:'Water Treatment',demand:400,priority:2},{id:'general',name:'Hospital General',demand:300,priority:3},{id:'emergency',name:'Emergency Response',demand:200,priority:4},{id:'admin',name:'Hospital Admin',demand:200,priority:5}];
+let config={solarCapacity:800,h2FuelCell:400,h2TankSize:10000,biomassCapacity:300,hydroCapacity:200,scenario:'standard'};
+let simData=[],currentHour=0,playing=false,playInterval=null,playSpeed=1,mainChart,storageChart,econChart;
 function seededRandom(seed){return function(){seed=(seed*16807)%2147483647;return(seed-1)/2147483646;}}
-
-function simulate(cfg){
-  const weather = weatherScenarios[cfg.scenario];
-  let h2Tank = cfg.h2TankSize * 0.8;
-  const rng = seededRandom(42);
-  const results = [];
-  const totalDemand = loads.reduce((s,l)=>s+l.demand,0);
-  for(let h=0;h<HOURS;h++){
-    const day = Math.floor(h/24);
-    const hr = h%24;
-    const wf = weather[day];
-    let solar=0;
-    if(hr>=6&&hr<=18){
-      const t=(hr-6)/12;
-      solar=cfg.solarCapacity*Math.sin(t*Math.PI)*wf*(0.88+rng()*0.24);
-    }
-    solar=Math.max(0,solar);
-    const hydro=cfg.hydroCapacity*(0.86+rng()*0.14);
-    const baseGen=solar+hydro;
-    let deficit=totalDemand-baseGen;
-    let biomass=0,hydrogen=0;
-    const shed=new Set();
-    if(deficit>0){
-      biomass=Math.min(deficit,cfg.biomassCapacity);
-      deficit-=biomass;
-      if(deficit>0){
-        const maxH2=Math.min(deficit,cfg.h2FuelCell);
-        const needed=maxH2/0.6;
-        if(h2Tank>=needed){hydrogen=maxH2;h2Tank-=needed;}
-        else{hydrogen=h2Tank*0.6;h2Tank=0;}
-        deficit-=hydrogen;
-        if(deficit>0){
-          const sorted=[...loads].sort((a,b)=>b.priority-a.priority);
-          let rem=deficit;
-          for(const l of sorted){if(rem<=0)break;if(l.priority===1)continue;shed.add(l.id);rem-=l.demand;}
-        }
-      }
-    }else{
-      const excess=-deficit;
-      h2Tank=Math.min(h2Tank+excess*0.7,cfg.h2TankSize);
-    }
-    results.push({hour:h,day:day+1,hourOfDay:hr,solar,hydro,biomass,hydrogen,totalGen:solar+hydro+biomass+hydrogen,totalDemand,h2Tank,h2Pct:(h2Tank/cfg.h2TankSize)*100,shed,loadsShed:shed.size>0});
-  }
-  return results;
-}
-
-function fmt(n){return n.toLocaleString('en-US',{maximumFractionDigits:0});}
-function fmtK(n){return n>=1e6?'$'+(n/1e6).toFixed(1)+'M':n>=1e3?'$'+(n/1e3).toFixed(0)+'K':'$'+fmt(n);}
-
-const verticalLinePlugin={
-  id:'cursorLine',
-  afterDraw(chart){
-    if(currentHour<0||!chart.scales.x)return;
-    const ctx=chart.ctx,xScale=chart.scales.x,yScale=chart.scales.y;
-    const x=xScale.getPixelForValue(currentHour);
-    if(x<xScale.left||x>xScale.right)return;
-    ctx.save();ctx.beginPath();ctx.moveTo(x,yScale.top);ctx.lineTo(x,yScale.bottom);
-    ctx.lineWidth=2;ctx.strokeStyle='rgba(26,77,62,0.45)';ctx.setLineDash([5,4]);ctx.stroke();ctx.restore();
-  }
-};
-
-function buildMainChart(){
-  const ctx=document.getElementById('mainChart').getContext('2d');
-  const maxGen=Math.max(...simData.map(d=>d.totalGen));
-  const maxDemand=Math.max(...simData.map(d=>d.totalDemand));
-  const chartMax=Math.ceil(Math.max(maxGen,maxDemand)*1.15/100)*100;
-  if(mainChart)mainChart.destroy();
-  mainChart=new Chart(ctx,{
-    type:'line',
-    data:{
-      labels:simData.map((_,i)=>i),
-      datasets:[
-        {label:'Solar',data:simData.map(d=>d.solar),fill:'origin',backgroundColor:'rgba(232,147,12,0.45)',borderColor:'#E8930C',borderWidth:1.5,pointRadius:0,tension:0.35,yAxisID:'y',order:4},
-        {label:'Hydroelectric',data:simData.map(d=>d.hydro),fill:'-1',backgroundColor:'rgba(8,145,178,0.45)',borderColor:'#0891B2',borderWidth:1.5,pointRadius:0,tension:0.35,yAxisID:'y',order:3},
-        {label:'Biomass',data:simData.map(d=>d.biomass),fill:'-1',backgroundColor:'rgba(22,163,74,0.45)',borderColor:'#16A34A',borderWidth:1.5,pointRadius:0,tension:0.35,yAxisID:'y',order:2},
-        {label:'Hydrogen',data:simData.map(d=>d.hydrogen),fill:'-1',backgroundColor:'rgba(37,99,235,0.45)',borderColor:'#2563EB',borderWidth:1.5,pointRadius:0,tension:0.35,yAxisID:'y',order:1},
-        {label:'Demand',data:simData.map(d=>d.totalDemand),fill:false,borderColor:'#DC2626',borderWidth:2.5,borderDash:[7,5],pointRadius:0,yAxisID:'y1',order:0},
-      ]
-    },
-    options:{
-      responsive:true,maintainAspectRatio:false,
-      interaction:{mode:'index',intersect:false},
-      scales:{
-        x:{grid:{color:'#F0ECE4'},ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:28,callback(val,i){const d=simData[i];if(!d)return'';if(d.hourOfDay===0)return'Day '+d.day;if(d.hourOfDay===12)return'12pm';return'';},font:{size:10}},border:{display:false}},
-        y:{stacked:true,beginAtZero:true,max:chartMax,grid:{color:'#F0ECE4'},ticks:{callback:v=>fmt(v),font:{size:10}},title:{display:true,text:'Power (kW)',font:{size:11,weight:'600'},color:'#5A5A74'},border:{display:false}},
-        y1:{display:false,beginAtZero:true,max:chartMax}
-      },
-      plugins:{legend:{display:false},tooltip:{backgroundColor:'rgba(26,26,46,0.92)',titleFont:{size:12,weight:'700'},bodyFont:{size:11},padding:10,cornerRadius:8,callbacks:{title(items){const d=simData[items[0].dataIndex];return'Day '+d.day+' \u2022 '+String(d.hourOfDay).padStart(2,'0')+':00';},label(item){if(item.datasetIndex===4)return'Demand: '+fmt(item.raw)+' kW';return item.dataset.label+': '+fmt(item.raw)+' kW';}}}}
-    },
-    plugins:[verticalLinePlugin]
-  });
-}
-
-function buildStorageChart(){
-  const ctx=document.getElementById('storageChart').getContext('2d');
-  if(storageChart)storageChart.destroy();
-  storageChart=new Chart(ctx,{
-    type:'line',
-    data:{
-      labels:simData.map((_,i)=>i),
-      datasets:[{
-        data:simData.map(d=>d.h2Pct),
-        fill:'origin',
-        backgroundColor:'rgba(37,99,235,0.15)',
-        borderColor:'#2563EB',borderWidth:2,pointRadius:0,tension:0.35
-      }]
-    },
-    options:{
-      responsive:true,maintainAspectRatio:false,
-      scales:{
-        x:{grid:{display:false},ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:7,callback(v,i){if(i%24===0)return'D'+(Math.floor(i/24)+1);return'';},font:{size:10}},border:{display:false}},
-        y:{beginAtZero:true,max:100,grid:{color:'#F0ECE4'},ticks:{callback:v=>v+'%',font:{size:10}},border:{display:false}}
-      },
-      plugins:{legend:{display:false},tooltip:{backgroundColor:'rgba(26,26,46,0.92)',cornerRadius:8,callbacks:{title(items){const d=simData[items[0].dataIndex];return'Day '+d.day+' \u2022 '+String(d.hourOfDay).padStart(2,'0')+':00';},label(item){return'Tank: '+item.raw.toFixed(1)+'%';}}}}
-    },
-    plugins:[verticalLinePlugin]
-  });
-}
-
-function computeEconomics(){
-  const c=config;
-  const hybridCapex=c.solarCapacity*1000+c.h2FuelCell*3000+c.h2TankSize*15+c.biomassCapacity*2000+c.hydroCapacity*4000;
-  const biomassEnergyPerEvent=simData.reduce((s,d)=>s+d.biomass,0);
-  const eventsPerYear=2.5;
-  const hybridOpex=biomassEnergyPerEvent*eventsPerYear*0.04+hybridCapex*0.02;
-  const hybridAnnual=hybridCapex/20+hybridOpex;
-  const totalDemand=loads.reduce((s,l)=>s+l.demand,0);
-  const dieselCapex=totalDemand*500;
-  const dieselFuelPerEvent=totalDemand*168*0.3*1.5;
-  const dieselOpex=dieselFuelPerEvent*eventsPerYear+dieselCapex*0.05;
-  const dieselAnnual=dieselCapex/15+dieselOpex;
-  const annualSavings=Math.max(0,dieselAnnual-hybridAnnual);
-  const payback=annualSavings>0?hybridCapex/annualSavings:99;
-  return{hybridCapex,hybridAnnual,dieselAnnual,annualSavings,payback,savings20yr:annualSavings*20};
-}
-
-function buildEconChart(){
-  const ctx=document.getElementById('econChart').getContext('2d');
-  const econ=computeEconomics();
-  if(econChart)econChart.destroy();
-  econChart=new Chart(ctx,{
-    type:'bar',
-    data:{
-      labels:['Hybrid Renewable','Diesel Backup'],
-      datasets:[{data:[econ.hybridAnnual/1000,econ.dieselAnnual/1000],backgroundColor:['#059669','#DC2626'],borderRadius:6,barThickness:28}]
-    },
-    options:{
-      responsive:true,maintainAspectRatio:false,indexAxis:'y',
-      scales:{
-        x:{beginAtZero:true,grid:{color:'#F0ECE4'},ticks:{callback:v=>'$'+v+'K',font:{size:10}},title:{display:true,text:'Annualized Cost ($K)',font:{size:10,weight:'600'},color:'#5A5A74'},border:{display:false}},
-        y:{grid:{display:false},ticks:{font:{size:11,weight:'600'}},border:{display:false}}
-      },
-      plugins:{legend:{display:false},tooltip:{backgroundColor:'rgba(26,26,46,0.92)',cornerRadius:8,callbacks:{label(item){return'$'+fmt(item.raw*1000)+'/year';}}}}
-    }
-  });
-  document.getElementById('valSavings').textContent=fmtK(econ.annualSavings)+'/yr';
-  document.getElementById('valPayback').textContent=econ.payback<50?econ.payback.toFixed(1)+' yrs':'>50 yrs';
-  document.getElementById('valCapex').textContent=fmtK(econ.hybridCapex);
-  document.getElementById('val20yr').textContent=fmtK(econ.savings20yr);
-}
-
-function buildWeatherStrip(){
-  const strip=document.getElementById('weatherStrip');
-  const weather=weatherScenarios[config.scenario];
-  const labels=weatherLabels[config.scenario];
-  strip.innerHTML='';
-  for(let d=0;d<7;d++){
-    const w=weather[d];
-    const cls=w>=0.8?'high':w>=0.5?'mid':'low';
-    const div=document.createElement('div');
-    div.className='weather-day'+(Math.floor(currentHour/24)===d?' active':'');
-    div.innerHTML='<div class="day-label">Day '+(d+1)+'</div><div class="weather-icon">'+weatherIcons(w)+'</div><div class="solar-eff '+cls+'">'+Math.round(w*100)+'% solar</div><div style="font-size:0.62rem;color:var(--text-muted);margin-top:2px">'+labels[d]+'</div>';
-    strip.appendChild(div);
-  }
-}
-
-function buildLoadList(){
-  const el=document.getElementById('loadList');
-  el.innerHTML='';
-  const d=simData[currentHour];
-  loads.forEach(l=>{
-    const isOn=!d.shed.has(l.id);
-    const div=document.createElement('div');
-    div.className='load-item';
-    div.innerHTML='<span class="load-dot '+(isOn?'on':'off')+'"></span><span class="load-name">'+l.name+'</span><span class="load-priority p'+l.priority+'">P'+l.priority+'</span><span class="load-demand">'+l.demand+' kW</span><span class="load-status '+(isOn?'on':'off')+'">'+(isOn?'Active':'Shed')+'</span>';
-    el.appendChild(div);
-  });
-}
-
-function updateMetrics(){
-  const d=simData[currentHour];
-  const cap=config.solarCapacity+config.h2FuelCell+config.biomassCapacity+config.hydroCapacity;
-  document.getElementById('valCapacity').textContent=fmt(cap);
-  document.getElementById('valGen').textContent=fmt(d.totalGen);
-  document.getElementById('subGen').textContent='Hour '+currentHour+' (Day '+d.day+')';
-  document.getElementById('valDemand').textContent=fmt(d.totalDemand);
-  const fullHours=simData.filter(x=>!x.loadsShed).length;
-  const uptime=Math.round(fullHours/HOURS*100);
-  document.getElementById('valUptime').textContent=uptime;
-  document.getElementById('subUptime').textContent=fullHours+' / '+HOURS+' hours';
-  const mc=document.getElementById('metricUptime');
-  mc.className='metric-card '+(uptime>=95?'good':uptime>=80?'':'alert');
-  document.getElementById('valH2').textContent=d.h2Pct.toFixed(0);
-  document.getElementById('subH2').textContent=fmt(d.h2Tank)+' / '+fmt(config.h2TankSize)+' kWh';
-  const h2card=document.getElementById('metricH2');
-  h2card.className='metric-card '+(d.h2Pct>30?'':'alert');
-}
-
-function updateTimeDisplay(){
-  const d=simData[currentHour];
-  document.getElementById('timeDisplay').textContent='Day '+d.day+' \u2022 '+String(d.hourOfDay).padStart(2,'0')+':00';
-  document.getElementById('scrubber').value=currentHour;
-}
-
-function updateAll(){
-  updateMetrics();
-  updateTimeDisplay();
-  buildLoadList();
-  buildWeatherStrip();
-  if(mainChart)mainChart.update('none');
-  if(storageChart)storageChart.update('none');
-}
-
-function runAll(){
-  simData=simulate(config);
-  buildMainChart();
-  buildStorageChart();
-  buildEconChart();
-  buildWeatherStrip();
-  buildLoadList();
-  updateMetrics();
-  updateTimeDisplay();
-}
-
-document.getElementById('configToggleBtn').addEventListener('click',()=>{
-  const body=document.getElementById('configBody');
-  const arrow=document.getElementById('configArrow');
-  body.classList.toggle('open');
-  arrow.classList.toggle('open');
-});
-document.getElementById('configToggle').addEventListener('click',()=>{
-  document.getElementById('configToggleBtn').click();
-});
-
-['sliderSolar','sliderH2FC','sliderH2Tank','sliderBiomass','sliderHydro'].forEach(id=>{
-  const el=document.getElementById(id);
-  const valEl=document.getElementById('val'+id.charAt(0).toUpperCase()+id.slice(1));
-  el.addEventListener('input',()=>{
-    const v=Number(el.value);
-    valEl.textContent=fmt(v);
-    if(id==='sliderSolar')config.solarCapacity=v;
-    else if(id==='sliderH2FC')config.h2FuelCell=v;
-    else if(id==='sliderH2Tank')config.h2TankSize=v;
-    else if(id==='sliderBiomass')config.biomassCapacity=v;
-    else if(id==='sliderHydro')config.hydroCapacity=v;
-    stopPlay();runAll();
-  });
-});
-
-document.getElementById('scenarioSelect').addEventListener('change',e=>{
-  config.scenario=e.target.value;stopPlay();runAll();
-});
-
-document.getElementById('scrubber').addEventListener('input',e=>{
-  currentHour=Number(e.target.value);updateAll();
-});
-
-function stopPlay(){
-  playing=false;
-  if(playInterval)clearInterval(playInterval);
-  playInterval=null;
-  document.getElementById('playBtn').innerHTML='&#9654; Play';
-}
-document.getElementById('playBtn').addEventListener('click',()=>{
-  if(playing){stopPlay();return;}
-  playing=true;
-  document.getElementById('playBtn').innerHTML='&#9646;&#9646; Pause';
-  playInterval=setInterval(()=>{
-    currentHour++;
-    if(currentHour>=HOURS){currentHour=0;}
-    updateAll();
-  },200/playSpeed);
-});
-document.getElementById('resetBtn').addEventListener('click',()=>{stopPlay();currentHour=0;updateAll();});
-
-document.querySelectorAll('.speed-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.speed-btn').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    playSpeed=Number(btn.dataset.speed);
-    if(playing){stopPlay();document.getElementById('playBtn').click();}
-  });
-});
-
-const ro=new ResizeObserver(()=>{
-  if(mainChart)mainChart.resize();
-  if(storageChart)storageChart.resize();
-  if(econChart)econChart.resize();
-});
+function simulate(cfg){const weather=weatherScenarios[cfg.scenario];let h2Tank=cfg.h2TankSize*0.8;const rng=seededRandom(42);const results=[];const totalDemand=loads.reduce((s,l)=>s+l.demand,0);for(let h=0;h<HOURS;h++){const day=Math.floor(h/24);const hr=h%24;const wf=weather[day];let solar=0;if(hr>=6&&hr<=18){const t=(hr-6)/12;solar=cfg.solarCapacity*Math.sin(t*Math.PI)*wf*(0.88+rng()*0.24)}solar=Math.max(0,solar);const hydro=cfg.hydroCapacity*(0.86+rng()*0.14);const baseGen=solar+hydro;let deficit=totalDemand-baseGen;let biomass=0,hydrogen=0;const shed=new Set();if(deficit>0){biomass=Math.min(deficit,cfg.biomassCapacity);deficit-=biomass;if(deficit>0){const maxH2=Math.min(deficit,cfg.h2FuelCell);const needed=maxH2/0.6;if(h2Tank>=needed){hydrogen=maxH2;h2Tank-=needed}else{hydrogen=h2Tank*0.6;h2Tank=0}deficit-=hydrogen;if(deficit>0){const sorted=[...loads].sort((a,b)=>b.priority-a.priority);let rem=deficit;for(const l of sorted){if(rem<=0)break;if(l.priority===1)continue;shed.add(l.id);rem-=l.demand}}}}else{const excess=-deficit;h2Tank=Math.min(h2Tank+excess*0.7,cfg.h2TankSize)}results.push({hour:h,day:day+1,hourOfDay:hr,solar,hydro,biomass,hydrogen,totalGen:solar+hydro+biomass+hydrogen,totalDemand,h2Tank,h2Pct:(h2Tank/cfg.h2TankSize)*100,shed,loadsShed:shed.size>0})}return results}
+function fmt(n){return n.toLocaleString('en-US',{maximumFractionDigits:0})}
+function fmtK(n){return n>=1e6?'$'+(n/1e6).toFixed(1)+'M':n>=1e3?'$'+(n/1e3).toFixed(0)+'K':'$'+fmt(n)}
+const verticalLinePlugin={id:'cursorLine',afterDraw(chart){if(currentHour<0||!chart.scales.x)return;const ctx=chart.ctx,xScale=chart.scales.x,yScale=chart.scales.y;const x=xScale.getPixelForValue(currentHour);if(x<xScale.left||x>xScale.right)return;ctx.save();ctx.beginPath();ctx.moveTo(x,yScale.top);ctx.lineTo(x,yScale.bottom);ctx.lineWidth=2;ctx.strokeStyle='rgba(26,77,62,0.45)';ctx.setLineDash([5,4]);ctx.stroke();ctx.restore()}};
+function buildMainChart(){const ctx=document.getElementById('mainChart').getContext('2d');const maxGen=Math.max(...simData.map(d=>d.totalGen));const maxDemand=Math.max(...simData.map(d=>d.totalDemand));const chartMax=Math.ceil(Math.max(maxGen,maxDemand)*1.15/100)*100;if(mainChart)mainChart.destroy();mainChart=new Chart(ctx,{type:'line',data:{labels:simData.map((_,i)=>i),datasets:[{label:'Solar',data:simData.map(d=>d.solar),fill:'origin',backgroundColor:'rgba(232,147,12,0.45)',borderColor:'#E8930C',borderWidth:1.5,pointRadius:0,tension:0.35,yAxisID:'y',order:4},{label:'Hydroelectric',data:simData.map(d=>d.hydro),fill:'-1',backgroundColor:'rgba(8,145,178,0.45)',borderColor:'#0891B2',borderWidth:1.5,pointRadius:0,tension:0.35,yAxisID:'y',order:3},{label:'Biomass',data:simData.map(d=>d.biomass),fill:'-1',backgroundColor:'rgba(22,163,74,0.45)',borderColor:'#16A34A',borderWidth:1.5,pointRadius:0,tension:0.35,yAxisID:'y',order:2},{label:'Hydrogen',data:simData.map(d=>d.hydrogen),fill:'-1',backgroundColor:'rgba(37,99,235,0.45)',borderColor:'#2563EB',borderWidth:1.5,pointRadius:0,tension:0.35,yAxisID:'y',order:1},{label:'Demand',data:simData.map(d=>d.totalDemand),fill:false,borderColor:'#DC2626',borderWidth:2.5,borderDash:[7,5],pointRadius:0,yAxisID:'y1',order:0}]},options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},scales:{x:{grid:{color:'#F0ECE4'},ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:28,callback(val,i){const d=simData[i];if(!d)return'';if(d.hourOfDay===0)return'Day '+d.day;if(d.hourOfDay===12)return'12pm';return''},font:{size:10}},border:{display:false}},y:{stacked:true,beginAtZero:true,max:chartMax,grid:{color:'#F0ECE4'},ticks:{callback:v=>fmt(v),font:{size:10}},title:{display:true,text:'Power (kW)',font:{size:11,weight:'600'},color:'#5A5A74'},border:{display:false}},y1:{display:false,beginAtZero:true,max:chartMax}},plugins:{legend:{display:false},tooltip:{backgroundColor:'rgba(26,26,46,0.92)',titleFont:{size:12,weight:'700'},bodyFont:{size:11},padding:10,cornerRadius:8,callbacks:{title(items){const d=simData[items[0].dataIndex];return'Day '+d.day+' \u2022 '+String(d.hourOfDay).padStart(2,'0')+':00'},label(item){if(item.datasetIndex===4)return'Demand: '+fmt(item.raw)+' kW';return item.dataset.label+': '+fmt(item.raw)+' kW'}}}}},plugins:[verticalLinePlugin]})}
+function buildStorageChart(){const ctx=document.getElementById('storageChart').getContext('2d');if(storageChart)storageChart.destroy();storageChart=new Chart(ctx,{type:'line',data:{labels:simData.map((_,i)=>i),datasets:[{data:simData.map(d=>d.h2Pct),fill:'origin',backgroundColor:'rgba(37,99,235,0.15)',borderColor:'#2563EB',borderWidth:2,pointRadius:0,tension:0.35}]},options:{responsive:true,maintainAspectRatio:false,scales:{x:{grid:{display:false},ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:7,callback(v,i){if(i%24===0)return'D'+(Math.floor(i/24)+1);return''},font:{size:10}},border:{display:false}},y:{beginAtZero:true,max:100,grid:{color:'#F0ECE4'},ticks:{callback:v=>v+'%',font:{size:10}},border:{display:false}}},plugins:{legend:{display:false},tooltip:{backgroundColor:'rgba(26,26,46,0.92)',cornerRadius:8,callbacks:{title(items){const d=simData[items[0].dataIndex];return'Day '+d.day+' \u2022 '+String(d.hourOfDay).padStart(2,'0')+':00'},label(item){return'Tank: '+item.raw.toFixed(1)+'%'}}}}},plugins:[verticalLinePlugin]})}
+function computeEconomics(){const c=config;const hybridCapex=c.solarCapacity*1000+c.h2FuelCell*3000+c.h2TankSize*15+c.biomassCapacity*2000+c.hydroCapacity*4000;const biomassEnergyPerEvent=simData.reduce((s,d)=>s+d.biomass,0);const eventsPerYear=2.5;const hybridOpex=biomassEnergyPerEvent*eventsPerYear*0.04+hybridCapex*0.02;const hybridAnnual=hybridCapex/20+hybridOpex;const totalDemand=loads.reduce((s,l)=>s+l.demand,0);const dieselCapex=totalDemand*500;const dieselFuelPerEvent=totalDemand*168*0.3*1.5;const dieselOpex=dieselFuelPerEvent*eventsPerYear+dieselCapex*0.05;const dieselAnnual=dieselCapex/15+dieselOpex;const annualSavings=Math.max(0,dieselAnnual-hybridAnnual);const payback=annualSavings>0?hybridCapex/annualSavings:99;return{hybridCapex,hybridAnnual,dieselAnnual,annualSavings,payback,savings20yr:annualSavings*20}}
+function buildEconChart(){const ctx=document.getElementById('econChart').getContext('2d');const econ=computeEconomics();if(econChart)econChart.destroy();econChart=new Chart(ctx,{type:'bar',data:{labels:['Hybrid Renewable','Diesel Backup'],datasets:[{data:[econ.hybridAnnual/1000,econ.dieselAnnual/1000],backgroundColor:['#059669','#DC2626'],borderRadius:6,barThickness:28}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',scales:{x:{beginAtZero:true,grid:{color:'#F0ECE4'},ticks:{callback:v=>'$'+v+'K',font:{size:10}},title:{display:true,text:'Annualized Cost ($K)',font:{size:10,weight:'600'},color:'#5A5A74'},border:{display:false}},y:{grid:{display:false},ticks:{font:{size:11,weight:'600'}},border:{display:false}}},plugins:{legend:{display:false},tooltip:{backgroundColor:'rgba(26,26,46,0.92)',cornerRadius:8,callbacks:{label(item){return'$'+fmt(item.raw*1000)+'/year'}}}}}});document.getElementById('valSavings').textContent=fmtK(econ.annualSavings)+'/yr';document.getElementById('valPayback').textContent=econ.payback<50?econ.payback.toFixed(1)+' yrs':'>50 yrs';document.getElementById('valCapex').textContent=fmtK(econ.hybridCapex);document.getElementById('val20yr').textContent=fmtK(econ.savings20yr)}
+function buildWeatherStrip(){const strip=document.getElementById('weatherStrip');const weather=weatherScenarios[config.scenario];const labels=weatherLabels[config.scenario];strip.innerHTML='';for(let d=0;d<7;d++){const w=weather[d];const cls=w>=0.8?'high':w>=0.5?'mid':'low';const div=document.createElement('div');div.className='weather-day'+(Math.floor(currentHour/24)===d?' active':'');div.innerHTML='<div class="day-label">Day '+(d+1)+'</div><div class="weather-icon">'+weatherIcons(w)+'</div><div class="solar-eff '+cls+'">'+Math.round(w*100)+'% solar</div><div style="font-size:0.62rem;color:var(--text-muted);margin-top:2px">'+labels[d]+'</div>';strip.appendChild(div)}}
+function buildLoadList(){const el=document.getElementById('loadList');el.innerHTML='';const d=simData[currentHour];loads.forEach(l=>{const isOn=!d.shed.has(l.id);const div=document.createElement('div');div.className='load-item';div.innerHTML='<span class="load-dot '+(isOn?'on':'off')+'"></span><span class="load-name">'+l.name+'</span><span class="load-priority p'+l.priority+'">P'+l.priority+'</span><span class="load-demand">'+l.demand+' kW</span><span class="load-status '+(isOn?'on':'off')+'">'+(isOn?'Active':'Shed')+'</span>';el.appendChild(div)})}
+function updateMetrics(){const d=simData[currentHour];const cap=config.solarCapacity+config.h2FuelCell+config.biomassCapacity+config.hydroCapacity;document.getElementById('valCapacity').textContent=fmt(cap);document.getElementById('valGen').textContent=fmt(d.totalGen);document.getElementById('subGen').textContent='Hour '+currentHour+' (Day '+d.day+')';document.getElementById('valDemand').textContent=fmt(d.totalDemand);const fullHours=simData.filter(x=>!x.loadsShed).length;const uptime=Math.round(fullHours/HOURS*100);document.getElementById('valUptime').textContent=uptime;document.getElementById('subUptime').textContent=fullHours+' / '+HOURS+' hours';const mc=document.getElementById('metricUptime');mc.className='metric-card '+(uptime>=95?'good':uptime>=80?'':'alert');document.getElementById('valH2').textContent=d.h2Pct.toFixed(0);document.getElementById('subH2').textContent=fmt(d.h2Tank)+' / '+fmt(config.h2TankSize)+' kWh';const h2card=document.getElementById('metricH2');h2card.className='metric-card '+(d.h2Pct>30?'':'alert')}
+function updateTimeDisplay(){const d=simData[currentHour];document.getElementById('timeDisplay').textContent='Day '+d.day+' \u2022 '+String(d.hourOfDay).padStart(2,'0')+':00';document.getElementById('scrubber').value=currentHour}
+function updateAll(){updateMetrics();updateTimeDisplay();buildLoadList();buildWeatherStrip();if(mainChart)mainChart.update('none');if(storageChart)storageChart.update('none')}
+function runAll(){simData=simulate(config);buildMainChart();buildStorageChart();buildEconChart();buildWeatherStrip();buildLoadList();updateMetrics();updateTimeDisplay()}
+document.getElementById('configToggleBtn').addEventListener('click',()=>{const body=document.getElementById('configBody');const arrow=document.getElementById('configArrow');body.classList.toggle('open');arrow.classList.toggle('open')});
+document.getElementById('configToggle').addEventListener('click',()=>{document.getElementById('configToggleBtn').click()});
+['sliderSolar','sliderH2FC','sliderH2Tank','sliderBiomass','sliderHydro'].forEach(id=>{const el=document.getElementById(id);const valEl=document.getElementById('val'+id.charAt(0).toUpperCase()+id.slice(1));el.addEventListener('input',()=>{const v=Number(el.value);valEl.textContent=fmt(v);if(id==='sliderSolar')config.solarCapacity=v;else if(id==='sliderH2FC')config.h2FuelCell=v;else if(id==='sliderH2Tank')config.h2TankSize=v;else if(id==='sliderBiomass')config.biomassCapacity=v;else if(id==='sliderHydro')config.hydroCapacity=v;stopPlay();runAll()})});
+document.getElementById('scenarioSelect').addEventListener('change',e=>{config.scenario=e.target.value;stopPlay();runAll()});
+document.getElementById('scrubber').addEventListener('input',e=>{currentHour=Number(e.target.value);updateAll()});
+function stopPlay(){playing=false;if(playInterval)clearInterval(playInterval);playInterval=null;document.getElementById('playBtn').innerHTML='&#9654; Play'}
+document.getElementById('playBtn').addEventListener('click',()=>{if(playing){stopPlay();return}playing=true;document.getElementById('playBtn').innerHTML='&#9646;&#9646; Pause';playInterval=setInterval(()=>{currentHour++;if(currentHour>=HOURS){currentHour=0}updateAll()},200/playSpeed)});
+document.getElementById('resetBtn').addEventListener('click',()=>{stopPlay();currentHour=0;updateAll()});
+document.querySelectorAll('.speed-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.speed-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');playSpeed=Number(btn.dataset.speed);if(playing){stopPlay();document.getElementById('playBtn').click()}})});
+const ro=new ResizeObserver(()=>{if(mainChart)mainChart.resize();if(storageChart)storageChart.resize();if(econChart)econChart.resize()});
 ro.observe(document.querySelector('.main-chart-wrap'));
 ro.observe(document.querySelector('.storage-chart-wrap'));
 ro.observe(document.querySelector('.econ-chart-wrap'));
-
 runAll();
 </script>
 </body>
