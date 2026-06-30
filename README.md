@@ -75,4 +75,7 @@ No installation needed. Simply visit the [Live Demo](https://jeetarora6769.githu
 
 ## Team
 
-- **Jeet Arora** — [GitHub](https://github.com/JEETARORA6769)
+- **Jeet Arora** — UI/UX & Frontend — [GitHub](https://github.com/JEETARORA6769)
+- **Anushree Khandelwal** — Full Stack — [GitHub](https://github.com/anushreeekh)
+- **Yash Kumar Bassi** — Backend — [GitHub](https://github.com/YashKumarBassi)
+
