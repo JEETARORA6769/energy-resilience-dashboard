@@ -4,7 +4,7 @@ AI-powered hybrid renewable energy resilience framework that simulates continuou
 
 ## Live Demo
 
-[View Dashboard](https://jeetarora6769.github.io/I-powered-hybrid-renewable-energy-resilience-simulator/)
+[View Dashboard](https://jeetarora6769.github.io/energy-resilience-dashboard/)
 
 ## Problem Statement
 
@@ -53,6 +53,25 @@ Hospitals, water treatment plants, and emergency services require uninterrupted 
 - HTML5 / CSS3 / JavaScript
 - Chart.js for data visualization
 - Custom simulation engine with seeded randomness
+
+## Screenshots
+
+### Dashboard Overview
+The main dashboard shows real-time metrics, weather conditions, and a stacked area chart of energy generation vs demand across 7 days.
+
+### Load Priority Panel
+Displays which critical facilities are powered or shed at any given hour, with priority-based color coding.
+
+### Economic Analysis
+Compares annualized costs of the hybrid renewable system vs traditional diesel backup, showing payback period and 20-year savings.
+
+## Getting Started
+
+No installation needed. Simply visit the [Live Demo](https://jeetarora6769.github.io/energy-resilience-dashboard/) or:
+
+1. Clone this repository
+2. Open `index.html` in any modern browser
+3. Use the controls to configure system parameters and run simulations
 
 ## Team
 
