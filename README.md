@@ -65,14 +65,6 @@ Displays which critical facilities are powered or shed at any given hour, with p
 ### Economic Analysis
 Compares annualized costs of the hybrid renewable system vs traditional diesel backup, showing payback period and 20-year savings.
 
-## Getting Started
-
-No installation needed. Simply visit the [Live Demo](https://jeetarora6769.github.io/energy-resilience-dashboard/) or:
-
-1. Clone this repository
-2. Open `index.html` in any modern browser
-3. Use the controls to configure system parameters and run simulations
-
 ## Team
 
 - **Jeet Arora** — UI/UX & Frontend — [GitHub](https://github.com/JEETARORA6769)
